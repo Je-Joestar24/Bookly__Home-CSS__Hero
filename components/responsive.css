@@ -1,0 +1,15 @@
+/* Responsive Design */
+@media (max-width: 768px) {
+  .Hero__title {
+    font-size: calc(var(--h1-size) * 0.7);
+  }
+
+  .Hero__tagline {
+    font-size: calc(var(--h2-size) * 0.8);
+  }
+
+  .Hero__content {
+    padding: 1rem;
+    text-align: center;
+  }
+}

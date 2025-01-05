@@ -1,0 +1,22 @@
+/*
+ * .Hero__wrapper::before
+ * Styles for the hero section wrapper's pseudo-element.
+ * Adds a subtle pattern background with a repeating pattern using CSS gradients.
+ */
+.Hero__wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    135deg,
+    var(--pastel-cream),
+    var(--pastel-cream) 20px,
+    var(--pastel-sage) 20px,
+    var(--pastel-sage) 40px
+  );
+  opacity: 0.1;
+  animation: subtleFloat 20s ease-in-out infinite;
+}

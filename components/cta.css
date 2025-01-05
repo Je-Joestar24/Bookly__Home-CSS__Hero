@@ -1,0 +1,24 @@
+/*
+ * .Hero__cta
+ * Styles for the hero section call-to-action.
+ * Sets the background color, color, padding, border radius, font weight,
+ * transition, opacity, and transform.
+ * Animates the CTA to fade in and move up.
+ * Adds hover effects for transform and box shadow.
+ */
+.Hero__cta {
+  background-color: var(--primary-green);
+  color: var(--text-dark);
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out 0.6s forwards;
+}
+
+.Hero__cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}

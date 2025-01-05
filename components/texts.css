@@ -1,0 +1,45 @@
+/*
+ * .Hero__title
+ * Styles for the hero section title.
+ * Sets the font size, color, margin bottom, opacity, and transform.
+ * Animates the title to fade in and move up.
+ */
+.Hero__title {
+  font-size: var(--h1-size);
+  color: var(--primary-brown);
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/*
+   * .Hero__tagline
+   * Styles for the hero section tagline.
+   * Sets the font size, color, margin bottom, opacity, and transform.
+   * Animates the tagline to fade in and move up.
+   */
+.Hero__tagline {
+  font-size: var(--h2-size);
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out 0.2s forwards;
+}
+
+/*
+   * .Hero__description
+   * Styles for the hero section description.
+   * Sets the font size, color, max width, margin bottom, opacity, and transform.
+   * Animates the description to fade in and move up.
+   */
+.Hero__description {
+  font-size: var(--body-size);
+  color: var(--text-dark);
+  max-width: 600px;
+  margin-bottom: 2rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out 0.4s forwards;
+}

@@ -1,3 +1,9 @@
+@import "components/responsive.css";
+@import "components/cta.css";
+@import "components/decorations.css";
+@import "components/texts.css";
+
+
 /*
  * .Hero__wrapper
  * Styles for the hero section wrapper.
@@ -12,22 +18,6 @@
   justify-content: center;
   position: relative;
   overflow: hidden;
-}
-/*
- * .Hero__wrapper::before
- * Styles for the hero section wrapper's pseudo-element.
- * Adds a subtle pattern background with a repeating pattern using CSS gradients.
- */
-.Hero__wrapper::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: repeating-linear-gradient(135deg, var(--pastel-cream), var(--pastel-cream) 20px, var(--pastel-sage) 20px, var(--pastel-sage) 40px);
-  opacity: 0.1;
-  animation: subtleFloat 20s ease-in-out infinite;
 }
 
 /*
@@ -44,77 +34,6 @@
   width: 100%;
 }
 
-/*
- * .Hero__title
- * Styles for the hero section title.
- * Sets the font size, color, margin bottom, opacity, and transform.
- * Animates the title to fade in and move up.
- */
-.Hero__title {
-  font-size: var(--h1-size);
-  color: var(--primary-brown);
-  margin-bottom: 1.5rem;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.8s ease-out forwards;
-}
-
-/*
- * .Hero__tagline
- * Styles for the hero section tagline.
- * Sets the font size, color, margin bottom, opacity, and transform.
- * Animates the tagline to fade in and move up.
- */
-.Hero__tagline {
-  font-size: var(--h2-size);
-  color: var(--text-dark);
-  margin-bottom: 1rem;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.8s ease-out 0.2s forwards;
-}
-
-/*
- * .Hero__description
- * Styles for the hero section description.
- * Sets the font size, color, max width, margin bottom, opacity, and transform.
- * Animates the description to fade in and move up.
- */
-.Hero__description {
-  font-size: var(--body-size);
-  color: var(--text-dark);
-  max-width: 600px;
-  margin-bottom: 2rem;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.8s ease-out 0.4s forwards;
-}
-
-/*
- * .Hero__cta
- * Styles for the hero section call-to-action.
- * Sets the background color, color, padding, border radius, font weight,
- * transition, opacity, and transform.
- * Animates the CTA to fade in and move up.
- * Adds hover effects for transform and box shadow.
- */
-.Hero__cta {
-  background-color: var(--primary-green);
-  color: var(--text-dark);
-  padding: 1rem 2rem;
-  border-radius: 50px;
-  font-weight: 600;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.8s ease-out 0.6s forwards;
-}
-
-.Hero__cta:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
 /* Animations */
 @keyframes fadeInUp {
   to {
@@ -124,26 +43,11 @@
 }
 
 @keyframes subtleFloat {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0) translateX(0);
   }
   50% {
     transform: translateY(-10px) translateX(10px);
-  }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .Hero__title {
-    font-size: calc(var(--h1-size) * 0.7);
-  }
-  
-  .Hero__tagline {
-    font-size: calc(var(--h2-size) * 0.8);
-  }
-  
-  .Hero__content {
-    padding: 1rem;
-    text-align: center;
   }
 }
